@@ -21,6 +21,11 @@
     margin: 1rem;
 }
 
+.element {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Use 700 for the bold variant */
+}
+
 .nav__list .nav__link {
     color: #FF00F8;
 }

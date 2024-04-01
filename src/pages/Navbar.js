@@ -19,9 +19,9 @@ const Navbar = () => {
     return (
         <header className="header">
             <nav className="nav container">
-                <NavLink to="/" className="nav__logo">
+                <NavLink to="/" className="nav__logo" style={{ display: "flex", alignItems: "center" }}>
                     <img src={logo} alt="Logo" className="nav__logo-icon" />
-                    <span style={{ color: "#FF00F8", fontFamily: "Roboto" }}>DisruptAI</span>
+                    <span style={{ color: "#FF00F8", fontFamily: "sans-serif", fontWeight: "530" , fontSize: "35px"}}>DisruptAI</span>
                 </NavLink>
 
                 <div

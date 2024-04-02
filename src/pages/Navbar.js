@@ -40,7 +40,7 @@ const Navbar = () => {
                                 className="nav__link"
                                 onClick={closeMenuOnMobile}
                             >
-                                About
+                                About Us
                             </NavLink>
                         </li>
                         <li className="nav__item">
@@ -49,7 +49,7 @@ const Navbar = () => {
                                 className="nav__link"
                                 onClick={closeMenuOnMobile}
                             >
-                                Contact Us
+                                Inquiry Form
                             </NavLink>
                         </li>
                         <li className="nav__item">
@@ -62,7 +62,7 @@ const Navbar = () => {
                             </NavLink>
                         </li>
                         <li className="nav__item">
-                            <NavLink to="/get-started" className="nav__link nav__cta">
+                            <NavLink to="/notes" className="nav__link nav__cta">
                                 Get Started
                             </NavLink>
                         </li>

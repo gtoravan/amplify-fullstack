@@ -8,15 +8,8 @@ import {
 import About from "./pages/about";
 import Contact from "./pages/contact";
 import NotesApp from "./Notes";
-import styled from "styled-components";
-import DemographicTargetingSection from "./pages/DemographicTargetingSection";
-import AdvertisingSection from "./pages/AdvertisingSection";
-import AnalyticsSection from "./pages/AnalyticsSection";
-import ComingSoonPart from "./pages/ComingSoonPart";
-import Footer from "./pages/Footer";
 
 import "./App.css";
-import NavbarHook from "./pages/NavbarHook";
 import LandingPage from "./pages/LandingPage";
 import Navbar from "./pages/Navbar";
 
@@ -46,19 +39,5 @@ function App() {
         </Router>
     );
 };
-
-
-// function App() {
-//     return (
-//         // <Router>
-//         //     <Routes>
-//         //         <Route path="/" element={<LandingPage />} />
-//         //         <Route path="/about" element={<AboutWithNavbar />} />
-//         //         <Route path="/contact" element={<ContactWithNavbar />} />
-//         //         <Route path="/Notes" element={<NotesAppWithNavbar />} />
-//         //     </Routes>
-//         // </Router>
-//     );
-// }
 
 export default App;

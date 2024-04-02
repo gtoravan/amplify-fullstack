@@ -4,10 +4,6 @@ import AnalyticsSection from "./AnalyticsSection";
 import ComingSoonPart from "./ComingSoonPart";
 import Footer from "./Footer";
 import * as React from "react";
-// import About from "./about";
-// import Navbar from "./Navbar";
-// import Contact from "./contact";
-// import NotesApp from "../Notes";
 import styled from "styled-components";
 import disruptaiImage from './disruptainew.png';
 
@@ -48,41 +44,6 @@ function LandingPage() {
     return (
         <MainContainer>
 
-
-            {/*<ContentWrapper>*/}
-            {/*    <MainColumn>*/}
-            {/*        <Header>*/}
-            {/*            /!*<Nav>*!/*/}
-            {/*            /!*    {navItems.map((item) => (*!/*/}
-            {/*            /!*        <Link key={item.label} to={item.url}>*!/*/}
-            {/*            /!*            {item.label}*!/*/}
-            {/*            /!*        </Link>*!/*/}
-            {/*            /!*    ))}*!/*/}
-            {/*            /!*</Nav>*!/*/}
-            {/*            <HeroSection>*/}
-            {/*                <HeroTitle>*/}
-            {/*                    AI-Powered Advertising: Target Perfectly, Spend Wisely*/}
-            {/*                </HeroTitle>*/}
-            {/*                <HeroDescription>*/}
-            {/*                    Introducing the next big thing in Marketing and Advertising: a*/}
-            {/*                    Generative AI-powered Demand-side Platform. This innovative*/}
-            {/*                    platform empowers Ad Campaign Managers to target the best*/}
-            {/*                    demographics and promote products with zero overhead or*/}
-            {/*                    production costs.*/}
-            {/*                </HeroDescription>*/}
-            {/*                <HeroActions>*/}
-            {/*                    <PrimaryButton>Sign Up!</PrimaryButton>*/}
-            {/*                    <SecondaryButton>Learn More</SecondaryButton>*/}
-            {/*                </HeroActions>*/}
-            {/*            </HeroSection>*/}
-            {/*        </Header>*/}
-            {/*    </MainColumn>*/}
-            {/*    <ImageColumn>*/}
-            {/*        /!*https://cdn.builder.io/api/v1/image/assets/TEMP/fbf32a592f14c9f3aff0726d729338eda00e904e8b7041411d8e37364c135d3b?apiKey=9354181eac784a43b2d64ee4bd7f05b0&*!/*/}
-            {/*        <HeroImage src={disruptaiImage} alt="AI-powered advertising" />*/}
-            {/*    </ImageColumn>*/}
-            {/*</ContentWrapper>*/}
-
             <SectionWrapper>
                 {data.map((item, index) => (
                     <AnalyticsItem key={index} {...item} />
@@ -121,15 +82,6 @@ const MainContainer = styled.main`
   background-color: white !important; // Add !important to override other styles
 `;
 
-// const ContentWrapper = styled.div`
-//                        display: flex;
-// gap: 20px;
-//
-// @media (max-width: 991px) {
-//     flex-direction: column;
-//     gap: 0;
-// }
-// `;
 
 const MainColumn = styled.div`
                    flex: 0 0 41%;
@@ -147,40 +99,6 @@ margin-top: 25px;
 
 @media (max-width: 991px) {
     max-width: 100%;
-}
-`;
-
-// const Nav = styled.nav`
-//             display: flex;
-// max-width: 244px;
-//   margin-left: 30px;
-// gap: 20px;
-// font-size: 14px;
-// color: #4a4ec9;
-// font-weight: 400;
-// line-height: 1.71;
-// justify-content: space-between;
-//
-// @media (max-width: 991px) {
-//     white-space: initial;
-// }
-// `;
-
-const NavItem = styled.a`
-                font-family: Roboto, sans-serif;
-`;
-
-const HeroSection = styled.section`
-                    display: flex;
-flex-direction: column;
-margin-top: 50px;
-padding-left: 48px;
-font-weight: 500;
-
-@media (max-width: 991px) {
-    max-width: 100%;
-    padding-left: 20px;
-    margin-top: 40px;
 }
 `;
 
@@ -209,19 +127,6 @@ font: 400 18px/30px Roboto, sans-serif;
 }
 `;
 
-const HeroActions = styled.div`
-                    display: flex;
-margin-top: 24px;
-gap: 20px;
-font-size: 16px;
-text-align: center;
-line-height: 1.625;
-
-@media (max-width: 991px) {
-    max-width: 100%;
-    flex-wrap: wrap;
-}
-`;
 
 const PrimaryButton = styled.button`
                       font-feature-settings: "clig" off, "liga" off;
@@ -252,28 +157,6 @@ padding: 14px 55px;
     padding: 0 20px;
 }
 `;
-
-// const ImageColumn = styled.div`
-//                     flex: 0 0 59%;
-// margin-left: 20px;
-//
-// @media (max-width: 991px) {
-//     flex: 1;
-//     margin-left: 0;
-// }
-// `;
-
-// const HeroImage = styled.img`
-//                   aspect-ratio: 1.01;
-// object-fit: auto;
-// object-position: center;
-// width: 100%;
-// fill: #e7e6ff;
-//
-// @media (max-width: 991px) {
-//     max-width: 100%;
-// }
-// `;
 
 
 
